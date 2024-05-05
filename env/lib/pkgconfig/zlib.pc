@@ -1,0 +1,13 @@
+prefix=/Users/kshitijberi/Documents/GitHub/flops/env
+exec_prefix=/Users/kshitijberi/Documents/GitHub/flops/env
+libdir=/Users/kshitijberi/Documents/GitHub/flops/env/lib
+sharedlibdir=/Users/kshitijberi/Documents/GitHub/flops/env/lib
+includedir=/Users/kshitijberi/Documents/GitHub/flops/env/include
+
+Name: zlib
+Description: zlib compression library
+Version: 1.2.13
+
+Requires:
+Libs: -L${libdir} -L${sharedlibdir} -lz
+Cflags: -I${includedir}
