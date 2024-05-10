@@ -1,0 +1,41 @@
+[2024-05-10 20:05:23,458] 96 werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.29.160:8000
+[2024-05-10 20:05:23,458] 96 werkzeug - INFO - [33mPress CTRL+C to quit[0m
+[2024-05-10 20:07:35,618] 96 werkzeug - INFO - 127.0.0.1 - - [10/May/2024 20:07:35] "GET / HTTP/1.1" 200 -
+[2024-05-10 20:07:35,653] 96 werkzeug - INFO - 127.0.0.1 - - [10/May/2024 20:07:35] "[33mGET /apple-touch-icon-precomposed.png HTTP/1.1[0m" 404 -
+[2024-05-10 20:07:35,660] 96 werkzeug - INFO - 127.0.0.1 - - [10/May/2024 20:07:35] "[33mGET /apple-touch-icon.png HTTP/1.1[0m" 404 -
+[2024-05-10 20:07:35,666] 96 werkzeug - INFO - 127.0.0.1 - - [10/May/2024 20:07:35] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2024-05-10 20:08:03,851] 96 werkzeug - INFO - 127.0.0.1 - - [10/May/2024 20:08:03] "GET / HTTP/1.1" 200 -
+[2024-05-10 20:08:40,041] 96 werkzeug - INFO - 127.0.0.1 - - [10/May/2024 20:08:40] "GET / HTTP/1.1" 200 -
+[2024-05-10 20:08:42,228] 96 werkzeug - INFO - 127.0.0.1 - - [10/May/2024 20:08:42] "GET /predict HTTP/1.1" 200 -
+[2024-05-10 20:09:00,875] 68 root - INFO - Dataframe Gathered
+[2024-05-10 20:09:00,977] 1414 app - ERROR - Exception on /predict [POST]
+Traceback (most recent call last):
+  File "/Users/kshitijberi/Documents/GitHub/flops/env/lib/python3.8/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/kshitijberi/Documents/GitHub/flops/env/lib/python3.8/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/kshitijberi/Documents/GitHub/flops/env/lib/python3.8/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/kshitijberi/Documents/GitHub/flops/env/lib/python3.8/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/Users/kshitijberi/Documents/GitHub/flops/app.py", line 36, in predict_datapoint
+    return render_template("result.html",final_result=result)
+  File "/Users/kshitijberi/Documents/GitHub/flops/env/lib/python3.8/site-packages/flask/templating.py", line 150, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "/Users/kshitijberi/Documents/GitHub/flops/env/lib/python3.8/site-packages/jinja2/environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/Users/kshitijberi/Documents/GitHub/flops/env/lib/python3.8/site-packages/jinja2/environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+  File "/Users/kshitijberi/Documents/GitHub/flops/env/lib/python3.8/site-packages/jinja2/environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/Users/kshitijberi/Documents/GitHub/flops/env/lib/python3.8/site-packages/jinja2/loaders.py", line 125, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/Users/kshitijberi/Documents/GitHub/flops/env/lib/python3.8/site-packages/flask/templating.py", line 64, in get_source
+    return self._get_source_fast(environment, template)
+  File "/Users/kshitijberi/Documents/GitHub/flops/env/lib/python3.8/site-packages/flask/templating.py", line 98, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: result.html
+[2024-05-10 20:09:00,980] 96 werkzeug - INFO - 127.0.0.1 - - [10/May/2024 20:09:00] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
