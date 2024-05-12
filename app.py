@@ -1,9 +1,11 @@
 import streamlit as st
 from src.pipeline.prediction_pipeline import PredictPipeline, CustomData
+from src.logger.logging import logging
 
 # Define the main function to run the Streamlit app
 def main():
     st.title("Diamond Price Prediction")
+    logging.info('app running')
 
     # Sidebar inputs
     st.sidebar.header("Input Features")
