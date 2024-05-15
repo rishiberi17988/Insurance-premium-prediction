@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/kshitijberi/Documents/GitHub/flops/mlruns/0/0ee53b5bdab540cba6709badee6f1804/artifacts
+end_time: 1715765907682
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 0ee53b5bdab540cba6709badee6f1804
+run_name: upbeat-moose-561
+run_uuid: 0ee53b5bdab540cba6709badee6f1804
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1715765906404
+status: 3
+tags: []
+user_id: kshitijberi

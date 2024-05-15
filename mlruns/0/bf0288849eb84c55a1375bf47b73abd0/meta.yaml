@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/kshitijberi/Documents/GitHub/flops/mlruns/0/bf0288849eb84c55a1375bf47b73abd0/artifacts
+end_time: 1715765975944
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: bf0288849eb84c55a1375bf47b73abd0
+run_name: beautiful-hare-704
+run_uuid: bf0288849eb84c55a1375bf47b73abd0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1715765974626
+status: 3
+tags: []
+user_id: kshitijberi

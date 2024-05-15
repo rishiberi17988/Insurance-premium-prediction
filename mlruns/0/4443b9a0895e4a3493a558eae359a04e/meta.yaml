@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/kshitijberi/Documents/GitHub/flops/mlruns/0/4443b9a0895e4a3493a558eae359a04e/artifacts
+end_time: 1715765782262
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 4443b9a0895e4a3493a558eae359a04e
+run_name: suave-gull-643
+run_uuid: 4443b9a0895e4a3493a558eae359a04e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1715765780867
+status: 3
+tags: []
+user_id: kshitijberi

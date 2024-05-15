@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/kshitijberi/Documents/GitHub/flops/mlruns/0/0dd67c3049d24f488d04513237dc154d/artifacts
+end_time: 1715765862163
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 0dd67c3049d24f488d04513237dc154d
+run_name: peaceful-frog-13
+run_uuid: 0dd67c3049d24f488d04513237dc154d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1715765860778
+status: 3
+tags: []
+user_id: kshitijberi
