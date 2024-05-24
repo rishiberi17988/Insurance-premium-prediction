@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/kshitijberi/Documents/GitHub/flops/mlruns/0/0c9e495ff4a546c38f1256253aee1a40/artifacts
+end_time: 1716266119106
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 0c9e495ff4a546c38f1256253aee1a40
+run_name: enchanting-cow-394
+run_uuid: 0c9e495ff4a546c38f1256253aee1a40
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1716266117682
+status: 3
+tags: []
+user_id: kshitijberi

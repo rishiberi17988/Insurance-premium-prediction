@@ -26,11 +26,11 @@ stages:
     outs:
     - path: artifacts/model.pkl
       hash: md5
-      md5: 0571648d690d39dc35feef13c0b3c047
-      size: 547
+      md5: 378d0f447152f1f0c85c6502d4627680
+      size: 591
     - path: artifacts/preprocessor.pkl
       hash: md5
-      md5: 5b1578c3adf0b33cee3ca8ace2c0dc8c
+      md5: 023ebdd7d747689f1b555f79a3e90731
       size: 3025
     - path: artifacts/raw.csv
       hash: md5
@@ -38,9 +38,9 @@ stages:
       size: 10462804
     - path: artifacts/test.csv
       hash: md5
-      md5: bf17e98ac0e54e38cc066e590f0b91e9
-      size: 2614783
+      md5: 20c631ded66f8169021191bc52a6c1aa
+      size: 2615787
     - path: artifacts/train.csv
       hash: md5
-      md5: 245c411e532a398f94bf45483014997b
-      size: 7848072
+      md5: de561952f082800e7771f2ca06981f06
+      size: 7847068

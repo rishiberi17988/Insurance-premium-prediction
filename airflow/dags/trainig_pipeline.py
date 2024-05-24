@@ -4,12 +4,12 @@ from textwrap import dedent
 import pendulum
 from airflow import DAG
 from airflow.operators.python import PythonOperator
-from src.DimondPricePrediction.pipelines.training_pipeline import TrainingPipeline
+from src.pipeline.training_pipeline import TrainingPipeline
 
 training_pipeline=TrainingPipeline()
 
 with DAG(
-    "gemstone_training_pipeline",
+    "aaaaaa",
     default_args={"retries": 2},
     description="it is my training pipeline",
     schedule="@weekly",# here you can test based on hour or mints but make sure here you container is up and running
@@ -85,10 +85,10 @@ with DAG(
     )
     
    
-    push_data_to_s3_task = PythonOperator(
+    '''push_data_to_s3_task = PythonOperator(
         task_id="push_data_to_s3",
-        python_callable=push_data_to_s3
-        )
+        python_callable=push_data_to_azureblob
+        )'''
 
 
-data_ingestion_task >> data_transform_task >> model_trainer_task >> push_data_to_s3_task
+data_ingestion_task >> data_transform_task >> model_trainer_task #>> push_data_to_s3_task

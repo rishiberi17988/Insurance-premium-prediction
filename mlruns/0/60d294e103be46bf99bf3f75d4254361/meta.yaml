@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/kshitijberi/Documents/GitHub/flops/mlruns/0/60d294e103be46bf99bf3f75d4254361/artifacts
+end_time: 1716267618999
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 60d294e103be46bf99bf3f75d4254361
+run_name: casual-hare-581
+run_uuid: 60d294e103be46bf99bf3f75d4254361
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1716267617401
+status: 3
+tags: []
+user_id: kshitijberi
