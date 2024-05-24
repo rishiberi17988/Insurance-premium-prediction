@@ -15,4 +15,4 @@ RUN chmod 777 start.sh
 RUN apt update -y
 
 ENTRYPOINT [ "/bin/sh" ]
-CMD ["start.sh"]
+CMD ["python3", "app.py"]
