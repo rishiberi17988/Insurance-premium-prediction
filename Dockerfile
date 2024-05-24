@@ -4,8 +4,9 @@ RUN mkdir /app
 COPY . /app
 WORKDIR /app/
 
+RUN apt-get update && apt-get install -y build-essential python3-dev libffi-dev libbz2-dev liblzma-dev
+RUN pip install --upgrade pip setuptools wheel
 RUN pip3 install -r requirements.txt
-RUN AIRFLOW_HOME = "/app/airflow"
 ENV AIRFLOW_CORE_DAGBAG_IMPORT_TIMEOUT=1000
 ENV AIRFLOW_CORE_ENABLE_XCOM_PICKLING=t=True
 RUN airflow db init
