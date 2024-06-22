@@ -24,7 +24,8 @@ class DataIngestion:
     def initiate_data_ingestion(self):
         logging.info("data ingestion started")
         try:
-            data=pd.read_csv("/Users/kshitijberi/Downloads/playground-series-s3e8/train.csv")
+            url = 'https://raw.githubusercontent.com/rishiberi17988/images/main/data.csv'
+            data = pd.read_csv(url)
             logging.info(" reading the data")
 
             os.makedirs(os.path.dirname(os.path.join(self.ingestion_config.raw_data_path)),exist_ok=True)

@@ -3,3 +3,6 @@ template.py
 test.py
 README.md
 data
+env
+artifacts
+airflow
